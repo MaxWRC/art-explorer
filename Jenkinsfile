@@ -38,13 +38,5 @@ pipeline {
                 '''
             }
         }
-
-        stage('Notify') {
-            steps {
-                mail to: 'test@test.com',
-                     subject: "CI/CD terminé",
-                     body: "Le pipeline Jenkins s’est exécuté avec succès"
-            }
-        }
     }
 }
